@@ -1,0 +1,30 @@
+@host = https://uj9hysb11a.execute-api.us-east-1.amazonaws.com
+
+###
+GET {{host}}/products
+
+###
+GET {{host}}/products/5d7e39f6-500e-4908-b42a-96e2d0cd75eb
+
+###
+POST {{host}}/products
+Content-Type: application/json
+
+{
+  "name": "Moletom JStack",
+  "price": 99.9,
+  "tags": ["moleta", "zica do baile"]
+}
+
+###
+PUT {{host}}/products/5d7e39f6-500e-4908-b42a-96e2d0cd75eb
+Content-Type: application/json
+
+{
+  "name": "Moletom JStack",
+  "price": 149.9,
+  "tags": ["moleta", "zica do baile"]
+}
+
+###
+DELETE {{host}}/products/c22a5f7c-274d-43b2-97f1-276d2f955103
